@@ -26,5 +26,6 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Repositories\Contracts\UserRepositoryContract', 'App\Repositories\UserRepository');
         $this->app->bind('App\Repositories\Contracts\PostsRepositoryContract', 'App\Repositories\PostsRepository');
         $this->app->bind('App\Repositories\Contracts\CommentsRepositoryContract', 'App\Repositories\CommentsRepository');
+        $this->app->bind('App\Repositories\Contracts\AuthenticateRepositoryContract', 'App\Repositories\AuthenticateRepository');
     }
 }
